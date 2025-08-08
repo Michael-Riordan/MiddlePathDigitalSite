@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <div className="flex gap-10 bg-[#fdfbf9] mt-10 justify-center">
             <Image 
-                src={'/newmiddlepathlogo.png'}
+                src={'/NewMiddlePathLogo.png'}
                 alt="middle path logo"
                 width={150}
                 height={150}
