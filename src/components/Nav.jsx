@@ -14,9 +14,9 @@ export default function Nav() {
                     />
                 </a>
                 <button 
-                    className="rounded-3xl p-2 md:p-5 bg-green-900 text-white cursor-pointer md:mr-10 mt-2"
+                    className="rounded-3xl p-2 md:p-4 bg-green-900 text-white cursor-pointer md:mr-10 mt-2"
                 >
-                    <a href="tel:+16316171415" className="md:align-middle font-semibold md:text-xl">Contact Us</a>
+                    <a href="tel:+16316171415" className="md:align-middle font-semibold md:text-lg">Call Now</a>
                 </button>
             </div>
         </nav>
