@@ -1,7 +1,6 @@
-import Hero from "@/components/Hero";
+import Hero from "@/components/Hero.jsx";
 import OurWork from "@/components/OurWork";
 import Why from "@/components/Why";
-import Image from "next/image";
 
 export default function Home() {
   return (

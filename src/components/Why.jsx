@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from "react";
+import { motion } from "framer-motion"; // <-- import motion
 import Reason from "./Reason";
 
 const reasons = [
@@ -57,21 +58,26 @@ const reasons = [
 export default function Why() {
     const [activeReason, setActiveReason] = useState(null);
 
-
     return (
         <section className="text-green-900">
             <h1 className="text-4xl md:text-4xl text-center mt-20 font-semibold">Why Choose Middle Path?</h1>
+
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-evenly mt-10 flex-wrap p-6">
-                {reasons.map((reason, idx) => {
-                    return (
+                {reasons.map((reason, idx) => (
+                    <motion.div
+                        key={idx}
+                        initial={{ scale: 0.8, opacity: 0 }}   // start small and invisible
+                        whileInView={{ scale: 1, opacity: 1 }} // grow and fade in when in viewport
+                        viewport={{ once: true, amount: 0.3 }} // animate once when 30% visible
+                        transition={{ duration: 0.5, ease: "easeOut" }}
+                    >
                         <Reason 
-                            key={idx}
                             title={reason.title}
                             description={reason.description}
                             onClick={() => setActiveReason(reason)}
                         />
-                    );
-                })}
+                    </motion.div>
+                ))}
             </div>
 
             {activeReason && (
