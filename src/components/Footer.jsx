@@ -27,23 +27,24 @@ export default function Footer() {
                     <p className="text-center md:text-right font-medium">
                         Ready to grow your business online?
                     </p>
-                    <a
-                        href="tel:+16316171415"
-                        className="bg-green-900 text-white font-semibold px-6 py-3 rounded-3xl shadow-lg hover:bg-green-800 hover:scale-105 transition transform duration-300"
-                    >
-                        Call Now
-                    </a>
-                    <p className="md:mr-12 font-light">or</p>
-                    <a
-                        href="/EmailForm"
-                        className="bg-green-900 text-white font-semibold px-6 py-3 rounded-3xl shadow-lg hover:bg-green-800 hover:scale-105 transition transform duration-300"
-                    >
-                        Email Us
-                    </a>
+                    <div className="flex gap-10">
+                        <a
+                            href="tel:+16316171415"
+                            className="bg-green-900 text-white font-semibold px-6 py-3 rounded-3xl shadow-lg hover:bg-green-800 hover:scale-105 transition transform duration-300"
+                        >
+                            Call Now
+                        </a>
+                        <a
+                            href="/EmailForm"
+                            className="bg-green-900 text-white font-semibold px-6 py-3 rounded-3xl shadow-lg hover:bg-green-800 hover:scale-105 transition transform duration-300"
+                        >
+                            Email Us
+                        </a>
+                    </div>
 
 
                     {/* Social links */}
-                    <div className="flex gap-4 mt-4">
+                    <div className="mt-10 self-center">
                         <a href="https://facebook.com/MiddlePathDigital" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                             <FaFacebook className="text-blue-600 w-6 h-6 hover:text-blue-800 transition-colors duration-300" />
                         </a>

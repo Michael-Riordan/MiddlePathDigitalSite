@@ -15,6 +15,11 @@ export default function OurWork() {
             imageSrc: '/mjr2screenshot.jpeg',
             siteUrl: 'https://mjrsquaredllc.com',
         },
+        {
+            title: 'Notary Website',
+            imageSrc: '/LR-screenshot.jpeg',
+            siteUrl: 'https://LRMobileNotary.com',
+        },
     ];
 
     return (
